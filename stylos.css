@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --black: rgb(33, 33, 33);
+  --gray: rgb(112, 117, 122);
+}
+header {
+  height: 100%;
+  width: 100%;
+}
+.accesos {
+  display: flex;
+  justify-content: start;
+}
+.accesos {
+  padding: 0;
+}
+.accesos__list li {
+  text-decoration: none;
+  list-style: none;
+}
+.accesos__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.accesos__items {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+.accesos__items a {
+  margin: 0 1rem;
+  color: var(--black);
+  text-decoration: none;
+}
+.accesos__items-image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+.accesos__items-image span {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-image: url(./image/fotodeprueba.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero {
+}
