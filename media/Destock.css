@@ -1,5 +1,6 @@
 .hero {
   grid-auto-columns: minmax(35rem, auto);
+  height: 60vh;
 }
 .hero__input {
   height: 2rem;
@@ -25,7 +26,8 @@
 }
 footer {
   display: flex;
-  font-size: 3rem;
+  align-content: center;
+  margin-top: 8rem;
 }
 .info-list {
   justify-content: end;
@@ -34,7 +36,7 @@ footer {
   margin: 0 0.5rem;
 }
 .info-items a {
-  font-size: 0.8rem;
+  font-size: 0.55rem;
 }
 .terms-list {
   justify-content: flex-end;

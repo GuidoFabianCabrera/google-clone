@@ -2,6 +2,20 @@
   display: flex;
   justify-content: flex-end;
 }
-.hero__title span {
-  font-size: 6rem;
+.hero {
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.hero .hero__title {
+  margin-top: 4rem;
+  width: 40vw;
+  height: 6rem;
+}
+.hero__title img {
+  width: 100%;
+}
+footer {
+  margin-top: 10rem;
 }

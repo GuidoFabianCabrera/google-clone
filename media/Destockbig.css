@@ -1,6 +1,18 @@
+.hero {
+  height: 70vh;
+}
+.hero .hero__title img {
+  width: 27vw;
+  height: 8rem;
+}
+.hero__title {
+  display: flex;
+  justify-content: center;
+}
 footer {
   display: flex;
   font-size: 3rem;
+  margin-top: 4rem;
 }
 .info-list {
   justify-content: end;
