@@ -70,6 +70,9 @@ header {
   border: transparent;
   outline: none;
 }
+.hero__input:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+}
 .hero__input {
   border: 0.1rem solid var(--gray-search);
   display: flex;
@@ -90,19 +93,30 @@ header {
 }
 .hero__button :hover {
   border: 0.1rem solid var(--gray-search);
-  box-shadow: ;
+}
+.hero__button button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px #c6c6c6;
+  color: #222;
+}
+.hero__button {
+  height: 3rem;
 }
 .hero__button button {
   border: none;
   font-size: 0.8rem;
-  line-height: 1rem;
+  font-weight: 200;
+  line-height: 1.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
-  padding: 0.3rem 0.5rem;
-  color: var(--gray);
+  padding: 0 0.6rem;
+  color: var(--black);
+  background-color: #f2f2f2;
 }
 footer {
   margin-top: 16rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
 }
 .info_container {
   height: 100%;

@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
 }
+.hero__button button {
+  font-size: 0.9rem;
+}
 footer {
   display: flex;
   font-size: 3rem;
