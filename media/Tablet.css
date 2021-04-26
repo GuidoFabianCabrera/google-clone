@@ -1,0 +1,7 @@
+.accesos__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero__title span {
+  font-size: 6rem;
+}

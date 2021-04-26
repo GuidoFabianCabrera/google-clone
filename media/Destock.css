@@ -1,0 +1,41 @@
+.hero {
+  grid-auto-columns: minmax(35rem, auto);
+}
+.hero__input {
+  height: 2rem;
+}
+.hero__input .search {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1rem 1rem;
+}
+.hero__input .microphone {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+}
+.hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__button button {
+  width: 10rem;
+  height: 2.2rem;
+}
+footer {
+  display: flex;
+  font-size: 3rem;
+}
+.info-list {
+  justify-content: end;
+}
+.info-items {
+  margin: 0 0.5rem;
+}
+.info-items a {
+  font-size: 0.8rem;
+}
+.terms-list {
+  justify-content: flex-end;
+}

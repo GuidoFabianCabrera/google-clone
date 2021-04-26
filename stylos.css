@@ -1,5 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+a {
+  cursor: pointer;
 }
 * {
   margin: 0;
@@ -38,22 +42,11 @@ header {
   color: var(--black);
   text-decoration: none;
 }
-.accesos__items-image {
+.accesos__items-image img {
   border-radius: 50%;
   overflow: hidden;
   height: 2rem;
   width: 2rem;
-  margin: 0 0.5rem;
-}
-.accesos__items-image span {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  width: 3rem;
-  background-image: url(./image/fotodeprueba.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .hero {
   height: 80vh;
@@ -61,40 +54,22 @@ header {
   display: grid;
   justify-content: center;
 }
-.hero__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero .hero__title {
+  margin-top: 4rem;
+  width: 40vw;
+  height: 6rem;
 }
-.hero__title span {
-  font-size: 5rem;
-  line-height: 3rem;
-  font-weight: 500;
+.hero__title img {
+  width: 100%;
 }
-.hero__title .one,
-.four {
-  color: var(--blue_light);
-}
-.hero__title .two,
-.six {
-  color: var(--red_light);
-}
-.hero__title .three {
-  color: var(--yellow);
-}
-.hero__title .five {
-  color: var(--green);
-}
-.hero__input {
-  border: 0.1rem solid var(--gray-search);
-  border-radius: 0.5rem;
-}
+
 .hero__searcher input {
   height: 1.5rem;
   width: 81%;
   border: transparent;
 }
 .hero__input {
+  border: 0.1rem solid var(--gray-search);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -111,8 +86,11 @@ header {
   height: 1rem;
   background-size: 1.5rem 1.5rem;
 }
-.hero__button button {
+.hero__button :hover {
   border: 0.1rem solid var(--gray-search);
+}
+.hero__button button {
+  border: none;
   font-size: 0.8rem;
   line-height: 1rem;
   margin: 0 0.5rem;
@@ -147,11 +125,87 @@ header {
   align-items: center;
   justify-content: center;
 }
-.terms-item a {
+.terms-items a {
   margin: 1rem 1rem;
   text-decoration: none;
   font-size: 0.6rem;
   font-weight: 500;
   line-height: 1rem;
   color: var(--gray);
+}
+@media screen and(min-width:500px) {
+  .accesos__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero__title span {
+    font-size: 6rem;
+  }
+}
+@media screen and(min-width:640px) {
+  .hero {
+    grid-auto-columns: minmax(35rem, auto);
+  }
+  .hero__input {
+    height: 2rem;
+  }
+  .hero__input .search {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1rem 1rem;
+  }
+  .hero__input .microphone {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem 1.5rem;
+  }
+  .hero__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__button button {
+    width: 10rem;
+    height: 2.2rem;
+  }
+  footer {
+    display: flex;
+    font-size: 3rem;
+  }
+  .info-list {
+    justify-content: end;
+  }
+  .info-items {
+    margin: 0 0.5rem;
+  }
+  .info-items a {
+    font-size: 0.8rem;
+  }
+  .terms-list {
+    justify-content: flex-end;
+  }
+}
+@media screen and(min-width:955px) {
+  footer {
+    display: flex;
+    font-size: 3rem;
+  }
+  .info-list {
+    justify-content: end;
+  }
+  .info-items {
+    margin: 0 0.5rem;
+  }
+  .info-items a {
+    font-size: 0.9rem;
+  }
+  .terms-list {
+    justify-content: flex-end;
+  }
+  .terms-items {
+    margin: 0 0.5rem;
+  }
+  .terms-items a {
+    font-size: 0.9rem;
+  }
 }

@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  font-size: 3rem;
+}
+.info-list {
+  justify-content: end;
+}
+.info-items {
+  margin: 0 0.5rem;
+}
+.info-items a {
+  font-size: 0.9rem;
+}
+.terms-list {
+  justify-content: flex-end;
+}
+.terms-items {
+  margin: 0 0.5rem;
+}
+.terms-items a {
+  font-size: 0.9rem;
+}
